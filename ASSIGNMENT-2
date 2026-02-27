@@ -1,1 +1,68 @@
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Clothing Store Designs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="gallery-container">
+        <img src="./login.jpeg" alt="Login Screen">
+        
+        <img src="./AFTER LOGIN.jpeg" alt="Main Categories">
+        
+        <img src="./WOMAN.jpeg" alt="Woman Category">
+        
+        <img src="./MAN.jpeg" alt="Man Category">
+        
+        <img src="./KIDS.jpeg" alt="Kids Category">
+        
+        <img src="./SECOND LAST.jpeg" alt="Checkout Screen">
+        
+        <img src="./thank.jpeg" alt="Thank You Screen">
+    </div>
+
+</body>
+</html>
+
+CSS
+
+/* Removes default browser margins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Gives the page a nice dark background to make your designs pop */
+body {
+    background-color: #2b2b2b;
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+/* Container to stack the images vertically */
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px; /* Space between each photo */
+    width: 100%;
+    max-width: 900px; /* Maximum width so they don't get too huge on big screens */
+}
+
+/* Styles applied to your actual photos */
+.gallery-container img {
+    width: 100%; /* Makes sure the image fits nicely inside the container */
+    height: auto;
+    border-radius: 12px; /* Softly rounded corners */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6); /* Adds a cool shadow effect */
+    border: 1px solid #444;
+}
+
 
